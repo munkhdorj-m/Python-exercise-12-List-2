@@ -10,7 +10,7 @@ https://drive.google.com/file/d/1lKmQwkQc8rGIuH9OIQB-yM6lFg-lW9Ch/view?usp=shari
 
 **Problem:**
 
-Turn every item of a list into its cube.
+Turn every number of a list into its cube.
 
 **Example:**
 
@@ -64,21 +64,3 @@ Reverse the elements of a list.
 
 ---
 
-## Bonus Challenge
-
-**Problem:**
-
-Bonus Challenge: Write a function that checks if a list is a palindrome (reads the same forwards and backwards).
-
-**Example**
-
-	Input: [1, 2, 3, 2, 1]
-	Output: True
-	
-	Input: [1, 2, 3, 4]
-	Output: False
-	
-	Input: ['a', 'b', 'a']
-	Output: True
-
----
