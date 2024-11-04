@@ -1,40 +1,51 @@
 import pytest
 import inspect
-from assignment import find_average, multiply_elements, find_smallest
+from assignment import cube_elements, remove_duplicates, reverse_list, is_palindrome
 
 def check_contains_loop(function):
     source = inspect.getsource(function)
     return 'for' in source or 'while' in source
 
 @pytest.mark.parametrize("numbers, expected", [
-    ([1, 2, 3, 4, 5], 3.0),
-    ([10, 20, 30], 20.0),
-    ([7], 7.0),
-    ([2, 4, 6, 8, 10], 6.0),
-    ([0, 0, 0], 0.0)
+    ([1, 2, 3], [1, 8, 27]),
+    ([0, 1, 2], [0, 1, 8]),
+    ([2, 3, 4], [8, 27, 64]),
+    ([-1, -2, -3], [-1, -8, -27]),
+    ([2], [8])
 ])
-def test1(numbers, expected):
-    assert find_average(numbers) == expected
-    assert check_contains_loop(find_average)
+def test_cube_elements(numbers, expected):
+    assert cube_elements(numbers) == expected
+    assert check_contains_loop(cube_elements)
 
 @pytest.mark.parametrize("numbers, expected", [
-    ([1, 2, 3, 4], 24),
-    ([5, 5, 5, 5], 625),
-    ([10, 20], 200),
-    ([7], 7),
-    ([2, 3, -1], -6)
+    ([1, 2, 2, 3, 4, 4], [1, 2, 3, 4]),
+    ([5, 5, 5, 5], [5]),
+    ([1, 2, 3], [1, 2, 3]),
+    ([1, 2, 2, 3, 1, 4], [1, 2, 3, 4]),
+    ([0, 0, 0], [0])
 ])
-def test2(numbers, expected):
-    assert multiply_elements(numbers) == expected
-    assert check_contains_loop(multiply_elements)
+def test_remove_duplicates(numbers, expected):
+    assert remove_duplicates(numbers) == expected
+    assert check_contains_loop(remove_duplicates)
 
 @pytest.mark.parametrize("numbers, expected", [
-    ([1, 2, 3, 4, 5], 1),
-    ([10, 20, 5, 30], 5),
-    ([7, 7, 7, 7], 7),
-    ([2, -4, 6, 8], -4),
-    ([0, -1, -5, 3], -5)
+    ([1, 2, 3], [3, 2, 1]),
+    ([4, 5, 6, 7], [7, 6, 5, 4]),
+    ([1], [1]),
+    ([], []),
+    ([10, 20, 30], [30, 20, 10])
 ])
-def test3(numbers, expected):
-    assert find_smallest(numbers) == expected
-    assert check_contains_loop(find_smallest)
+def test_reverse_list(numbers, expected):
+    assert reverse_list(numbers) == expected
+    assert check_contains_loop(reverse_list)
+
+@pytest.mark.parametrize("lst, expected", [
+    ([1, 2, 3, 2, 1], True),
+    ([1, 2, 3, 4], False),
+    (['a', 'b', 'a'], True),
+    ([1, 2, 3, 4, 5, 4, 3, 2, 1], True),
+    ([1, 2, 3, 4, 5, 6], False)
+])
+def test_is_palindrome(lst, expected):
+    assert is_palindrome(lst) == expected
+    assert check_contains_loop(is_palindrome)
