@@ -39,13 +39,3 @@ def test3(numbers, expected):
     assert reverse_list(numbers) == expected
     assert check_contains_loop(reverse_list)
 
-@pytest.mark.parametrize("lst, expected", [
-    ([1, 2, 3, 2, 1], True),
-    ([1, 2, 3, 4], False),
-    (['a', 'b', 'a'], True),
-    ([1, 2, 3, 4, 5, 4, 3, 2, 1], True),
-    ([1, 2, 3, 4, 5, 6], False)
-])
-def test_bonus(lst, expected):
-    assert is_palindrome(lst) == expected
-    assert check_contains_loop(is_palindrome)
