@@ -10,18 +10,19 @@ https://drive.google.com/file/d/1lKmQwkQc8rGIuH9OIQB-yM6lFg-lW9Ch/view?usp=shari
 
 **Problem:**
 
-Find average of list elements.
+Turn every item of a list into its cube.
 
 **Example:**
 
- 	Input: [4,2,5,2]
-  	Output: 3.25
-      
- 	Input: [5,5,5,5,5]
-  	Output: 5.0
+ 	Input: [1, 2, 3]
+	Output: [1, 8, 27]
+	
+	Input: [4, 5, 6]
+	Output: [64, 125, 216]
+	
+	Input: [0, -1, -2]
+	Output: [0, -1, -8]
 
- 	Input: [9,1,23,2,3]
-  	Output: 7.6
 
 ---
 
@@ -29,18 +30,18 @@ Find average of list elements.
 
 **Problem:**
 
-Find multiply of list elements.
+Remove duplicates from list and return new list.
 
 **Example**
-
-	Input: [1,2,3,4,5]
- 	Output: 120
-
- 	Input: [2,9,5,6]
- 	Output: 540
-  
-   	Input: [1,1,1,1,1]
- 	Output: 1
+	
+	Input: [3, 2, 3, 1, 2, 3, 4, 2]
+	Output: [3, 2, 1, 4]
+	
+	Input: [1, 2, 3, 4, 4, 5]
+	Output: [1, 2, 3, 4, 5]
+	
+	Input: [5, 5, 5]
+	Output: [5]
 
 ---
 
@@ -48,17 +49,36 @@ Find multiply of list elements.
 
 **Problem:**
 
-Find smallest element in a list.
+Reverse the elements of a list.
 
 **Example**
 
-	Input: [9,12,3,5,0]
- 	Output: 0
+	Input: [1, 2, 3, 4]
+	Output: [4, 3, 2, 1]
+	
+	Input: [5, 4, 3]
+	Output: [3, 4, 5]
+	
+	Input: ['a', 'b', 'c']
+	Output: ['c', 'b', 'a']
 
- 	Input: [-99,-12,-42,-55]
- 	Output: -99
-  
-   	Input: [5,5,5,5]
- 	Output: 5
+---
+
+## Bonus Challenge
+
+**Problem:**
+
+Bonus Challenge: Write a function that checks if a list is a palindrome (reads the same forwards and backwards).
+
+**Example**
+
+	Input: [1, 2, 3, 2, 1]
+	Output: True
+	
+	Input: [1, 2, 3, 4]
+	Output: False
+	
+	Input: ['a', 'b', 'a']
+	Output: True
 
 ---
