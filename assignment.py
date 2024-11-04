@@ -15,7 +15,3 @@ def reverse_list(numbers):
     # Write your code here
     pass
 
-# Bonus Challenge
-def is_palindrome(lst):
-    # Write your code here
-    pass
