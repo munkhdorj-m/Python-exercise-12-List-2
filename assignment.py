@@ -1,16 +1,21 @@
 # You can remove 'pass' if you written code in the function 
 
 # Exercise 1
-def find_average(numbers):
+def cube_elements(numbers):
     # Write your code here
     pass
 
 # Exercise 2
-def multiply_elements(numbers):
+def remove_duplicates(numbers):
     # Write your code here
     pass
 
 # Exercise 3
-def find_smallest(numbers):
+def reverse_list(numbers):
+    # Write your code here
+    pass
+
+# Bonus Challenge
+def is_palindrome(lst):
     # Write your code here
     pass
