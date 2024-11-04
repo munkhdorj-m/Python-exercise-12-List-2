@@ -27,15 +27,6 @@
         "comparison": "included",
         "timeout": 5,
         "points": 1
-      },
-      {
-        "name": "bonus_challenge",
-        "run": "pytest test_assignment.py::test_bonus",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 5,
-        "points": 0
       }
     ]
   }
