@@ -1,6 +1,6 @@
 import pytest
 import inspect
-from assignment import cube_elements, remove_duplicates, reverse_list, is_palindrome
+from assignment import cube_elements, remove_duplicates, reverse_list
 
 def check_contains_loop(function):
     source = inspect.getsource(function)
