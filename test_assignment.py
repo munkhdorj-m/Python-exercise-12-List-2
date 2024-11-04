@@ -13,7 +13,7 @@ def check_contains_loop(function):
     ([-1, -2, -3], [-1, -8, -27]),
     ([2], [8])
 ])
-def test_cube_elements(numbers, expected):
+def test1(numbers, expected):
     assert cube_elements(numbers) == expected
     assert check_contains_loop(cube_elements)
 
@@ -24,7 +24,7 @@ def test_cube_elements(numbers, expected):
     ([1, 2, 2, 3, 1, 4], [1, 2, 3, 4]),
     ([0, 0, 0], [0])
 ])
-def test_remove_duplicates(numbers, expected):
+def test2(numbers, expected):
     assert remove_duplicates(numbers) == expected
     assert check_contains_loop(remove_duplicates)
 
@@ -35,7 +35,7 @@ def test_remove_duplicates(numbers, expected):
     ([], []),
     ([10, 20, 30], [30, 20, 10])
 ])
-def test_reverse_list(numbers, expected):
+def test3(numbers, expected):
     assert reverse_list(numbers) == expected
     assert check_contains_loop(reverse_list)
 
@@ -46,6 +46,6 @@ def test_reverse_list(numbers, expected):
     ([1, 2, 3, 4, 5, 4, 3, 2, 1], True),
     ([1, 2, 3, 4, 5, 6], False)
 ])
-def test_is_palindrome(lst, expected):
+def test_bonus(lst, expected):
     assert is_palindrome(lst) == expected
     assert check_contains_loop(is_palindrome)
